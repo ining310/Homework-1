@@ -83,6 +83,7 @@ contract NFinTech is IERC721 {
     }
 
     function approve(address to, uint256 tokenId) external {
+        // 確認那個人有沒有那個token revert
         // TODO: please add your implementaiton here
     }
 
@@ -95,6 +96,8 @@ contract NFinTech is IERC721 {
     }
 
     function safeTransferFrom(address from, address to, uint256 tokenId, bytes calldata data) public {
+        // 要看對方有沒有接收token的能力
+        // 做完safeTransferFrom 對方要回傳一個數值 要看數值對不對(contract的話，eoa就沒差)
         // TODO: please add your implementaiton here
     }
 

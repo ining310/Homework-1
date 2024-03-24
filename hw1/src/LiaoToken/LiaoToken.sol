@@ -63,10 +63,13 @@ contract LiaoToken is IERC20 {
     }
 
     function transferFrom(address from, address to, uint256 value) external returns (bool) {
+        // 我是louis，我做 transferFrom。from:alice, to:bob。我有沒有alice token的權限
         // TODO: please add your implementaiton here
     }
 
     function approve(address spender, uint256 amount) external returns (bool) {
+        // 給你一張支票，用那張支票操作我的錢
+        // 記錄誰有誰憑證，那憑證多少錢，數值用mapping比較適合
         // TODO: please add your implementaiton here
     }
 
