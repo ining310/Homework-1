@@ -41,5 +41,11 @@ contract StudentV2 {
 contract StudentV3 {
     function register() external view returns (uint256) {
         // TODO: please add your implementaiton here
+        if (gasleft() > 7000) {
+            return 10001;
+        }
+        else {
+            return 123;
+        }
     }
 }
